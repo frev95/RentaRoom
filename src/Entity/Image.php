@@ -22,6 +22,12 @@ class Image
      */
     private $url;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Room::class, inversedBy="images")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $room;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -35,6 +41,18 @@ class Image
     public function setUrl(string $url): self
     {
         $this->url = $url;
+
+        return $this;
+    }
+
+    public function getRoom(): ?Room
+    {
+        return $this->room;
+    }
+
+    public function setRoom(?Room $room): self
+    {
+        $this->room = $room;
 
         return $this;
     }
