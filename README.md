@@ -107,16 +107,19 @@ This entity represents the type of a feature for a room.
 
 ## Pages architecture
 
--- all rooms
-    -- room
-        -- reservation (if logged)
--- login
--- register
--- account
-    -- user reservations
-        -- add, modify or cancel a reservation
-    -- admin dashboard
-        -- reservations to be validated or rejected
-        -- create, edit or delete a room with images and features
-        -- create, edit or delete a feature
-        -- delete an user
+    |-- all rooms
+    |       |-- room
+    |           |-- reservation (if logged)
+    |
+    |-- login
+    |-- register
+    |
+    |-- account
+            |-- user reservations
+            |           |-- add, modify or cancel a reservation
+            |
+            |-- admin dashboard
+                        |-- reservations to be validated or rejected
+                        |-- create, edit or delete a room with images and features
+                        |-- create, edit or delete a feature
+                        |-- delete an user
