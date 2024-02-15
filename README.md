@@ -109,7 +109,7 @@ This entity represents the type of a feature for a room.
 
     |-- all rooms
     |       |-- room
-    |           |-- reservation (if logged)
+    |           |-- reservation (needs to be logged)
     |
     |-- login
     |-- register
