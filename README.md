@@ -14,8 +14,7 @@ The technologies used are:
 
 ### User
 
-This entity represents a user of the platform. The user can be a company or an association.
-The `role` property is useless (was confused with user/admin roles).
+This entity represents a user of the platform; the user is supposed to be a company or an association.
 
 | Property     | Type      | Description          | Relation    |
 | ------------ | --------- | -------------------- | ----------- |
@@ -25,6 +24,8 @@ The `role` property is useless (was confused with user/admin roles).
 | phone        | string    | 30                   |             |
 | role         | string    | 30 NOT NULL          |             |
 | reservations | OneToMany |                      | Reservation |
+
+The property `role` is useless (was confused with user/admin roles).
 
 ---
 
